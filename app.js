@@ -2,11 +2,14 @@
 
 const errorText = "is not a valid number but a/an";
 const convertFahrToCelsius = (value = 1) => {
-    let initialValue = typeof value;
+    
     if (typeof value === "number") {
-        return ((value - 32) * 5) / 9;
+        let result = (value - 32) * (5/9)
+        return result.toFixed(4);
     } else if (typeof value === "string") {
-        return ` ${value} ${errorText} string`;
+        value = Number(value)
+        let result = (value - 32) * (5/9)
+        return result.toFixed(4);
     }
     else if (typeof value === "boolean") {
         return ` ${value} ${errorText} boolean`;
@@ -17,7 +20,7 @@ const convertFahrToCelsius = (value = 1) => {
     }
 };
 
-const result = convertFahrToCelsius();
+const result = convertFahrToCelsius(true);
 console.log(result);
 
 // checkYuGiOh GAME //
