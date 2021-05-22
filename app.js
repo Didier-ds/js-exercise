@@ -20,8 +20,7 @@ const convertFahrToCelsius = (value = 1) => {
     }
 };
 
-const result = convertFahrToCelsius(true);
-console.log(result);
+
 
 // checkYuGiOh GAME //
 
