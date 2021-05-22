@@ -58,19 +58,3 @@ const isMultipleOf5 = n => n % 5 === 0;
          return SPEECH;
         }
 
-// checkYuGiOh = (n = 0) => {
-//     let isNotANumber = isNaN(Number(n));
-//     if (isNotANumber) return `invalid parameter: ${n}\n\n`;
-
-//     let array = [];
-//     let i = 1;
-//     while( i<= n){
-//         let string="";
-//         if(isMultipleOf2(i)) string += 'yu';
-//         if(isMultipleOf3(i)) string += string ? '-gi' : 'gi';
-//         if(isMultipleOf2(i)) string += string ? '-oh' : 'oh';
-//         string ? array.push(string): array.push(i);
-//         i++
-//     }
-//     return `${array} \n\n`
-// }
